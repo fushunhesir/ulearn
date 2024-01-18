@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ulearn-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-base/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-content/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-content/ulearn-content-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-content/ulearn-content-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-content/ulearn-content-model/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-system/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-system/xuecheng-plus-system-model/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-system/xuecheng-plus-system-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-system/xuecheng-plus-system-api/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,102 @@
+2024-01-09 16:27:53,505 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.6.Final
+2024-01-09 16:27:53,505 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.6.Final
+2024-01-09 16:27:53,734 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2024-01-09 16:27:53,734 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2024-01-09 16:27:53,932 INFO [main][GenericScope.java:295] - BeanFactory id=42542b52-65e0-300c-a703-0e8102bfc45d
+2024-01-09 16:27:53,932 INFO [main][GenericScope.java:295] - BeanFactory id=42542b52-65e0-300c-a703-0e8102bfc45d
+2024-01-09 16:27:54,049 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2024-01-09 16:27:54,049 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2024-01-09 16:27:54,061 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:27:54,061 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:27:54,062 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2024-01-09 16:27:54,062 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2024-01-09 16:27:54,062 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2024-01-09 16:27:54,062 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2024-01-09 16:27:54,103 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2024-01-09 16:27:54,103 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2024-01-09 16:27:54,103 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 362 ms
+2024-01-09 16:27:54,103 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 362 ms
+2024-01-09 16:27:54,174 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:27:54,174 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:27:54,294 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:27:54,294 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:27:54,309 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2024-01-09 16:27:54,309 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2024-01-09 16:27:54,314 INFO [main][StartupInfoLogger.java:61] - Started ContentApplication in 1.012 seconds (JVM running for 1.526)
+2024-01-09 16:27:54,314 INFO [main][StartupInfoLogger.java:61] - Started ContentApplication in 1.012 seconds (JVM running for 1.526)
+2024-01-09 16:29:27,818 INFO [http-nio-63040-exec-3][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 16:29:27,818 INFO [http-nio-63040-exec-3][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 16:29:27,820 INFO [http-nio-63040-exec-3][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2024-01-09 16:29:27,820 INFO [http-nio-63040-exec-3][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2024-01-09 16:29:27,833 INFO [http-nio-63040-exec-3][FrameworkServlet.java:547] - Completed initialization in 13 ms
+2024-01-09 16:29:27,833 INFO [http-nio-63040-exec-3][FrameworkServlet.java:547] - Completed initialization in 13 ms
+2024-01-09 16:30:06,699 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:30:06,699 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:30:27,690 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.6.Final
+2024-01-09 16:30:27,690 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.6.Final
+2024-01-09 16:30:27,919 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2024-01-09 16:30:27,919 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2024-01-09 16:30:28,105 INFO [main][GenericScope.java:295] - BeanFactory id=42542b52-65e0-300c-a703-0e8102bfc45d
+2024-01-09 16:30:28,105 INFO [main][GenericScope.java:295] - BeanFactory id=42542b52-65e0-300c-a703-0e8102bfc45d
+2024-01-09 16:30:28,223 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2024-01-09 16:30:28,223 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2024-01-09 16:30:28,232 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:30:28,232 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:30:28,232 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2024-01-09 16:30:28,232 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2024-01-09 16:30:28,232 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2024-01-09 16:30:28,232 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2024-01-09 16:30:28,271 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2024-01-09 16:30:28,271 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2024-01-09 16:30:28,271 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 345 ms
+2024-01-09 16:30:28,271 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 345 ms
+2024-01-09 16:30:28,349 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:30:28,349 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:30:28,473 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:30:28,473 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:30:28,488 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2024-01-09 16:30:28,488 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2024-01-09 16:30:28,493 INFO [main][StartupInfoLogger.java:61] - Started ContentApplication in 0.995 seconds (JVM running for 1.481)
+2024-01-09 16:30:28,493 INFO [main][StartupInfoLogger.java:61] - Started ContentApplication in 0.995 seconds (JVM running for 1.481)
+2024-01-09 16:30:40,562 INFO [http-nio-63040-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 16:30:40,562 INFO [http-nio-63040-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 16:30:40,562 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2024-01-09 16:30:40,562 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2024-01-09 16:30:40,566 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 4 ms
+2024-01-09 16:30:40,566 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 4 ms
+2024-01-09 16:31:05,007 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:31:05,007 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:31:40,249 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.6.Final
+2024-01-09 16:31:40,249 INFO [background-preinit][Version.java:21] - HV000001: Hibernate Validator 6.1.6.Final
+2024-01-09 16:31:40,459 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2024-01-09 16:31:40,459 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2024-01-09 16:31:40,646 INFO [main][GenericScope.java:295] - BeanFactory id=42542b52-65e0-300c-a703-0e8102bfc45d
+2024-01-09 16:31:40,646 INFO [main][GenericScope.java:295] - BeanFactory id=42542b52-65e0-300c-a703-0e8102bfc45d
+2024-01-09 16:31:40,750 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2024-01-09 16:31:40,750 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2024-01-09 16:31:40,758 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:31:40,758 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:31:40,759 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2024-01-09 16:31:40,759 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2024-01-09 16:31:40,759 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2024-01-09 16:31:40,759 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2024-01-09 16:31:40,794 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2024-01-09 16:31:40,794 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2024-01-09 16:31:40,795 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 329 ms
+2024-01-09 16:31:40,795 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 329 ms
+2024-01-09 16:31:40,869 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:31:40,869 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:31:40,983 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:31:40,983 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-63040"]
+2024-01-09 16:31:40,998 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2024-01-09 16:31:40,998 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2024-01-09 16:31:41,002 INFO [main][StartupInfoLogger.java:61] - Started ContentApplication in 0.934 seconds (JVM running for 1.32)
+2024-01-09 16:31:41,002 INFO [main][StartupInfoLogger.java:61] - Started ContentApplication in 0.934 seconds (JVM running for 1.32)
+2024-01-09 16:31:43,766 INFO [http-nio-63040-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 16:31:43,766 INFO [http-nio-63040-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 16:31:43,766 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2024-01-09 16:31:43,766 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2024-01-09 16:31:43,770 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 4 ms
+2024-01-09 16:31:43,770 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 4 ms
+2024-01-09 16:31:51,630 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 16:31:51,630 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
