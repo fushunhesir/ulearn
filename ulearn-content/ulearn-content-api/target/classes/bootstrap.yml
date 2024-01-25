@@ -1,30 +1,1 @@
-server:
-  servlet:
-    context-path: /content
-  port: 63040
-#微服务配置
-spring:
-  application:
-    name: content-api
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/content?serverTimezone=UTC&userUnicode=true&useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: 332129702
-  cloud:
-    nacos:
-      server-addr: 192.168.43.156
-      discovery:
-        namespace: dev
-        group: ulearn
-
-# 日志文件配置路径
-logging:
-  config: classpath:log4j2-dev.xml
-# swagger接口文档配置
-swagger:
-  title: "Ulearn内容管理系统"
-  description: "对课程基本信息进行管理"
-  base-package: pers.hanwei.ulearn.content
-  enable: true
-  version: 1.0.0
+#微服务配置spring:  application:    name: content-api  cloud:    nacos:      server-addr: 192.168.43.156:8848      discovery:        namespace: dev        group: ulearn      config:        namespace: dev        group: ulearn        file-extension: yaml        refresh-enabled: true        extension-configs:          - data-id: content-service-${spring.profiles.active}.yaml            group: ulearn            refresh: true        shared-configs:          - data-id: freemarker-config-${spring.profiles.active}.yaml            group: ulearn-common            refresh: true          - data-id: swagger-${spring.profiles.active}.yaml            group: ulearn-common            refresh: true          - data-id: logging-${spring.profiles.active}.yaml            group: ulearn-common            refresh: true  profiles:    active: dev

@@ -16,7 +16,7 @@ spring:
       discovery:
         namespace: dev
         group: ulearn
-      server-addr: 192.168.43.156
+      server-addr: 192.168.43.156:8848
 # 日志文件配置路径
 logging:
   config: classpath:log4j2-dev.xml

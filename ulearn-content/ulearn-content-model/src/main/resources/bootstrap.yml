@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: 192.168.43.156:8848
+      discovery:
+        namespace: dev
+        group: ulearn
+      config:
+        namespace: dev
+        group: ulearn
+        file-extension: yaml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: logging-${spring.profiles.active}.yaml
+            group: ulearn-common
+            refresh: true
+
+  profiles:
+    active: dev

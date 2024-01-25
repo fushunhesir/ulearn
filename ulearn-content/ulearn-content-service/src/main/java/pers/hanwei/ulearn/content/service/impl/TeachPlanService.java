@@ -4,12 +4,16 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import pers.hanwei.ulearn.base.exception.TeachPlanDeleteException;
 import pers.hanwei.ulearn.base.exception.ULearnException;
 import pers.hanwei.ulearn.content.mapper.TeachplanMapper;
+import pers.hanwei.ulearn.content.mapper.TeachplanMediaMapper;
+import pers.hanwei.ulearn.content.model.dto.BindTeachplanMediaDto;
 import pers.hanwei.ulearn.content.model.dto.SaveTeachplanDto;
 import pers.hanwei.ulearn.content.model.dto.TeachplanDto;
 import pers.hanwei.ulearn.content.model.po.Teachplan;
+import pers.hanwei.ulearn.content.model.po.TeachplanMedia;
 import pers.hanwei.ulearn.content.service.ITeachPlanService;
 
 import java.time.LocalDateTime;
@@ -20,6 +24,9 @@ import java.util.stream.Collectors;
 public class TeachPlanService implements ITeachPlanService {
     @Autowired
     TeachplanMapper teachplanMapper;
+
+    @Autowired
+    TeachplanMediaMapper teachplanMediaMapper;
 
     /**
      * @param courseId 课程id
@@ -140,6 +147,62 @@ public class TeachPlanService implements ITeachPlanService {
                 teachplanMapper.updateById(exchange);
             }
         }
+    }
+
+
+    /**
+     * 将课程计划与媒体文件绑定
+     * @param bindTeachplanMediaDto 前端提交的媒体文件信息——将该文件与课程计划绑定
+     */
+    @Override
+    @Transactional
+    public void associateMedia(BindTeachplanMediaDto bindTeachplanMediaDto) {
+        // 检测课程计划是否存在
+        Teachplan teachplan = teachplanMapper.selectById(bindTeachplanMediaDto.getTeachplanId());
+        if(teachplan == null) {
+            throw new ULearnException("该课程计划不存在");
+        }
+
+        // 检测该课程计划是否是小节
+        if(teachplan.getGrade() != 2) {
+            throw new ULearnException("视频只能与小节绑定");
+        }
+
+        // 删除绑定表中该课程计划原有的信息
+        teachplanMediaMapper.delete(new LambdaQueryWrapper<TeachplanMedia>().eq(
+                TeachplanMedia::getTeachplanId,
+                bindTeachplanMediaDto.getTeachplanId()
+        ));
+
+        // 提取、补充信息
+        TeachplanMedia teachplanMedia = new TeachplanMedia();
+        teachplanMedia.setCourseId(teachplan.getCourseId());
+        teachplanMedia.setTeachplanId(teachplan.getId());
+        teachplanMedia.setMediaFilename(bindTeachplanMediaDto.getFileName());
+        teachplanMedia.setMediaId(bindTeachplanMediaDto.getMediaId());
+        teachplanMedia.setCreateDate(LocalDateTime.now());
+
+        // 写回数据库
+        teachplanMediaMapper.insert(teachplanMedia);
+    }
+
+    @Override
+    public void inAssociateMedia(Long teachPlanId, String mediaId) {
+        // 检测课程计划是否存在
+        Teachplan teachplan = teachplanMapper.selectById(teachPlanId);
+        if(teachplan == null) {
+            throw new ULearnException("改课程计划不存在");
+        }
+
+        if(teachplan.getGrade() != 2) {
+            throw new ULearnException("只能修改小节类型");
+        }
+
+        // 删除绑定表中该课程计划的信息
+        LambdaQueryWrapper<TeachplanMedia> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        lambdaQueryWrapper.eq(TeachplanMedia::getTeachplanId, teachPlanId);
+        lambdaQueryWrapper.eq(TeachplanMedia::getMediaId, mediaId);
+        teachplanMediaMapper.delete(lambdaQueryWrapper);
     }
 
     private void updateOrder(Long courseId, int grade, Long parentId) {

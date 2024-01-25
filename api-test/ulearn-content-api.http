@@ -1,1 +1,1 @@
-GET {{content_host}}/content/course/list
+DELETE {{content_host}}/content/teachplan/association/media/304/1750023637842505730

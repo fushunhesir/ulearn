@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for ulearn-system" enabled="true">
+      <profile name="Annotation profile for ulearn-content" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -17,13 +17,21 @@
         <module name="ulearn-system-service" />
         <module name="ulearn-content-api" />
         <module name="ulearn-system-model" />
+        <module name="ulearn-media-service" />
         <module name="ulearn-base" />
         <module name="ulearn-content-service" />
+        <module name="ulearn-media-model" />
+        <module name="ulearn-gateway" />
         <module name="ulearn-content-model" />
         <module name="ulearn-system-api" />
+        <module name="ulearn-media-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ulearn-media-api-1" target="1.8" />
+      <module name="ulearn-media-model-1" target="1.8" />
+      <module name="ulearn-media-service-2" target="1.8" />
+      <module name="xuecheng-plus-media-api" target="1.5" />
       <module name="xuecheng-plus-system-api" target="1.5" />
     </bytecodeTargetLevel>
   </component>

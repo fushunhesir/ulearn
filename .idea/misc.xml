@@ -14,6 +14,19 @@
         <option value="$PROJECT_DIR$/ulearn-system/xuecheng-plus-system-model/pom.xml" />
         <option value="$PROJECT_DIR$/ulearn-system/xuecheng-plus-system-service/pom.xml" />
         <option value="$PROJECT_DIR$/ulearn-system/xuecheng-plus-system-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/xuecheng-plus-media-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/xuecheng-plus-media-model/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/xuecheng-plus-media-service/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-media/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/ulearn-media-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/ulearn-media-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/ulearn-media-model/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media-1/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/ulearn-media-api-1/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/ulearn-media-model-1/pom.xml" />
+        <option value="$PROJECT_DIR$/ulearn-media/ulearn-media-service-2/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import pers.hanwei.ulearn.content.model.dto.BindTeachplanMediaDto;
 import pers.hanwei.ulearn.content.model.dto.SaveTeachplanDto;
 import pers.hanwei.ulearn.content.model.dto.TeachplanDto;
 import pers.hanwei.ulearn.content.service.impl.TeachPlanService;
@@ -43,5 +44,23 @@ public class TeachPlanController {
     @PostMapping("/teachplan/{move}/{id}")
     public void moveTeachPlan(@PathVariable("move") String move, @PathVariable("id") Long id) {
         teachPlanService.moveTeachPlan(move, id);
+    }
+
+    /**
+     * 将课程计划的每一小节与对应的视频绑定起来
+     * @param bindTeachplanMediaDto
+     */
+    @ApiOperation("课程与媒体文件绑定接口")
+    @PostMapping("/teachplan/association/media")
+    public void associateMedia(@RequestBody BindTeachplanMediaDto bindTeachplanMediaDto){
+        teachPlanService.associateMedia(bindTeachplanMediaDto);
+    }
+
+
+
+    @ApiOperation("将课程计划与媒体文件解绑")
+    @DeleteMapping("/teachplan/association/media/{teachPlanId}/{mediaId}")
+    public void inAssociateMedia(@PathVariable Long teachPlanId, @PathVariable String mediaId) {
+        teachPlanService.inAssociateMedia(teachPlanId, mediaId);
     }
 }
